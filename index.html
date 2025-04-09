@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Workshop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="index.js"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- 📱 Mobile Layout -->
+  <div class="block lg:hidden mobile" id="MobileView">
+    <!-- Your MOBILE layout HTML goes here -->
+    <div>
+      <header class="text-sm">
+        <h1 class="font-bold text-sm">Equity Investing for <br> Wealth Creation</h1>
+        <p class="font-bold text-sm">Achieve Financial Independence Years Before Retirement.</p>
+
+      </header>
+      <div class="sections">
+        <section id="mentor-mobile">
+
+          <h2 class="font-bold">Meet Your Mentor</h2>
+          <div class="varmaji font-bold text-sm">
+            <img src="mentor.jpg" alt="Mr. Virendra Verma">
+            Virendra Verma
+          </div>
+          <p class="text-center text-sm azib-jagah"><strong>Expert with 30+ Years in Capital Markets</strong>
+          </p>
+
+          <p class="text-sm">With over three decades of experience, Virendra Verma has a unique <em>360-degree
+              perspective</em> on capital markets. From starting as a financial journalist to becoming a Portfolio
+            Manager, he has worked with 1,000+ leaders from start-ups to blue-chip companies.</p>
+
+          <p class="text-sm">Having witnessed major financial events like the <strong>DotCom Bubble (2000)</strong>,
+            <strong>Lehman Crisis (2008)</strong>, and <strong>COVID (2020)</strong>, Virendra brings unparalleled
+            insights. Join his masterclass to learn from a true industry veteran.
+          </p>
+
+        </section>
+
+        <section id="masterclass-info-mobile">
+          <h2 class="font-bold">Master Class Info</h2>
+          <ul class="mt-4 mb-6">
+            <li>
+              <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M8 12C7.44772 12 7 12.4477 7 13C7 13.5523 7.44772 14 8 14H16C16.5523 14 17 13.5523 17 13C17 12.4477 16.5523 12 16 12H8Z"
+                  fill="#152C70" />
+                <path
+                  d="M7 17C7 16.4477 7.44772 16 8 16H12C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18H8C7.44772 18 7 17.5523 7 17Z"
+                  fill="#152C70" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7 2C7.55228 2 8 2.44772 8 3V4H16V3C16 2.44772 16.4477 2 17 2C17.5523 2 18 2.44772 18 3V4.10002C20.2822 4.56329 22 6.58104 22 9V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V9C2 6.58104 3.71776 4.56329 6 4.10002V3C6 2.44772 6.44772 2 7 2ZM20 10H4V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V10Z"
+                  fill="#152C70" />
+              </svg>
+              <strong>Date:</strong> 19 April 2025
+            </li>
+            <li>
+              <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                  fill="#1C274C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.6893L15.0303 13.9697C15.3232 14.2626 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2626 15.3232 13.9697 15.0303L11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                  fill="white" />
+              </svg>
+              <strong>Time:</strong> 11:00 am
+            </li>
+            <li>
+              <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M5.19825 3.29918C5.80046 2 7.86697 2 12 2C16.133 2 18.1995 2 18.8017 3.29918C18.8535 3.41086 18.8972 3.52686 18.9323 3.6461C19.3414 5.0333 17.8802 6.64111 14.9577 9.85674L13 12L14.9577 14.1433C17.8802 17.3589 19.3414 18.9667 18.9323 20.3539C18.8972 20.4731 18.8535 20.5891 18.8017 20.7008C18.1995 22 16.133 22 12 22C7.86697 22 5.80046 22 5.19825 20.7008C5.14649 20.5891 5.10282 20.4731 5.06765 20.3539C4.65857 18.9667 6.11981 17.3589 9.0423 14.1433L11 12L9.0423 9.85674C6.11981 6.64111 4.65857 5.0333 5.06765 3.6461C5.10282 3.52686 5.14649 3.41086 5.19825 3.29918Z"
+                  fill="#1C274C" />
+              </svg>
+              <strong>Duration:</strong> 3 hrs+
+            </li>
+            <li>
+              <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1 20.24C1 19.8203 1.3436 19.48 1.76744 19.48H22.2326C22.6564 19.48 23 19.8203 23 20.24C23 20.6597 22.6564 21 22.2326 21H1.76744C1.3436 21 1 20.6597 1 20.24Z"
+                  fill="#1C274C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.68981 3.8904C2.7907 4.78079 2.7907 6.21386 2.7907 9.08V14.1467C2.7907 16.0574 2.7907 17.0128 3.39011 17.6064C3.98952 18.2 4.95425 18.2 6.88372 18.2H17.1163C19.0457 18.2 20.0105 18.2 20.6099 17.6064C21.2093 17.0128 21.2093 16.0574 21.2093 14.1467V9.08C21.2093 6.21386 21.2093 4.78079 20.3102 3.8904C19.4111 3 17.964 3 15.0698 3H8.93023C6.03603 3 4.58893 3 3.68981 3.8904ZM8.16279 15.16C8.16279 14.7403 8.50639 14.4 8.93023 14.4H15.0698C15.4936 14.4 15.8372 14.7403 15.8372 15.16C15.8372 15.5797 15.4936 15.92 15.0698 15.92H8.93023C8.50639 15.92 8.16279 15.5797 8.16279 15.16Z"
+                  fill="#1C274C" />
+              </svg>
+              <strong>Platform:</strong> Zoom
+            </li>
+            </li>
+          </ul>
+          <div class="mobile-reg">
+            <button class="register-button" type="button" onclick="next()">Register Now for ₹9</button>
+          </div>
+          <p class="mt-4">Achieve Your Financial Goals 10X Faster & Live Stress-Free</p>
+        </section>
+
+        <section id="learn">
+          <h2>Here’s What You’ll Learn in the Workshop</h2>
+          <ul>
+            <li>How to use small cap stocks to create generational wealth</li>
+            <li>Identifying Multibaggers in Minutes</li>
+            <li>Finding best Mutual funds/stocks early that can give best returns</li>
+            <li>All about FIRE & early retirement</li>
+          </ul>
+        </section>
+
+        <section id="bonuses">
+          <h2>Bonuses Worth ₹XX,XXX</h2>
+          <ul>
+            <li>Finance Dictionary Worth ₹x,xxx</li>
+            <li>Masterclass Cheatsheet Worth ₹x,xxx</li>
+            <li>E-books on Trading Journey Worth ₹x,xxx</li>
+          </ul>
+        </section>
+      </div>
+      <footer>
+        <p>&copy; 2025 VinAiak Finance. All rights reserved.</p>
+      </footer>
+    </div>
+    <section class="p-4">
+      <h1 class="text-2xl font-bold">Welcome to Mobile View</h1>
+      <!-- Rest of mobile-specific content -->
+    </section>
+  </div>
+
+  <!-- 💻 Desktop Layout -->
+  <div class="hidden lg:block text-2xl" id="DesktopView">
+
+    <div>
+      <header>
+        <h1 class="font-bold">Equity Investing for Wealth Creation</h1>
+        <p class="font-bold">Achieve Financial Independence Years Before Retirement.</p>
+
+      </header>
+      <div class="sections">
+        <div class="bagal">
+          <section id="mentor">
+
+            <h2 class="font-bold">Meet Your Mentor</h2>
+            <div>
+              <img src="mentor.jpg" alt="Mr. Virendra Verma">
+            </div>
+            <p class="text-center m-4"><strong>Meet Virendra Verma – Expert with 30+ Years in Capital Markets</strong>
+            </p>
+
+            <p class="text-xl">With over three decades of experience, Virendra Verma has a unique <em>360-degree
+                perspective</em> on capital markets. From starting as a financial journalist to becoming a Portfolio
+              Manager, he has worked with 1,000+ leaders from start-ups to blue-chip companies.</p>
+
+            <p class="text-xl">Having witnessed major financial events like the <strong>DotCom Bubble (2000)</strong>,
+              <strong>Lehman Crisis (2008)</strong>, and <strong>COVID (2020)</strong>, Virendra brings unparalleled
+              insights. Join his masterclass to learn from a true industry veteran.
+            </p>
+
+          </section>
+
+          <section id="masterclass-info">
+            <h2 class="font-bold">Master Class Info</h2>
+            <ul class="mt-4 mb-6">
+              <li>
+                <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M8 12C7.44772 12 7 12.4477 7 13C7 13.5523 7.44772 14 8 14H16C16.5523 14 17 13.5523 17 13C17 12.4477 16.5523 12 16 12H8Z"
+                    fill="#152C70" />
+                  <path
+                    d="M7 17C7 16.4477 7.44772 16 8 16H12C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18H8C7.44772 18 7 17.5523 7 17Z"
+                    fill="#152C70" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 2C7.55228 2 8 2.44772 8 3V4H16V3C16 2.44772 16.4477 2 17 2C17.5523 2 18 2.44772 18 3V4.10002C20.2822 4.56329 22 6.58104 22 9V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V9C2 6.58104 3.71776 4.56329 6 4.10002V3C6 2.44772 6.44772 2 7 2ZM20 10H4V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V10Z"
+                    fill="#152C70" />
+                </svg>
+                <strong>Date:</strong> 19 April 2025
+              </li>
+              <li>
+                <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    fill="#1C274C" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.6893L15.0303 13.9697C15.3232 14.2626 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2626 15.3232 13.9697 15.0303L11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                    fill="white" />
+                </svg>
+                <strong>Time:</strong> 11:00 am
+              </li>
+              <li>
+                <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M5.19825 3.29918C5.80046 2 7.86697 2 12 2C16.133 2 18.1995 2 18.8017 3.29918C18.8535 3.41086 18.8972 3.52686 18.9323 3.6461C19.3414 5.0333 17.8802 6.64111 14.9577 9.85674L13 12L14.9577 14.1433C17.8802 17.3589 19.3414 18.9667 18.9323 20.3539C18.8972 20.4731 18.8535 20.5891 18.8017 20.7008C18.1995 22 16.133 22 12 22C7.86697 22 5.80046 22 5.19825 20.7008C5.14649 20.5891 5.10282 20.4731 5.06765 20.3539C4.65857 18.9667 6.11981 17.3589 9.0423 14.1433L11 12L9.0423 9.85674C6.11981 6.64111 4.65857 5.0333 5.06765 3.6461C5.10282 3.52686 5.14649 3.41086 5.19825 3.29918Z"
+                    fill="#1C274C" />
+                </svg>
+                <strong>Duration:</strong> 3 hrs+
+              </li>
+              <li>
+                <svg class="h-6 w-6 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1 20.24C1 19.8203 1.3436 19.48 1.76744 19.48H22.2326C22.6564 19.48 23 19.8203 23 20.24C23 20.6597 22.6564 21 22.2326 21H1.76744C1.3436 21 1 20.6597 1 20.24Z"
+                    fill="#1C274C" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.68981 3.8904C2.7907 4.78079 2.7907 6.21386 2.7907 9.08V14.1467C2.7907 16.0574 2.7907 17.0128 3.39011 17.6064C3.98952 18.2 4.95425 18.2 6.88372 18.2H17.1163C19.0457 18.2 20.0105 18.2 20.6099 17.6064C21.2093 17.0128 21.2093 16.0574 21.2093 14.1467V9.08C21.2093 6.21386 21.2093 4.78079 20.3102 3.8904C19.4111 3 17.964 3 15.0698 3H8.93023C6.03603 3 4.58893 3 3.68981 3.8904ZM8.16279 15.16C8.16279 14.7403 8.50639 14.4 8.93023 14.4H15.0698C15.4936 14.4 15.8372 14.7403 15.8372 15.16C15.8372 15.5797 15.4936 15.92 15.0698 15.92H8.93023C8.50639 15.92 8.16279 15.5797 8.16279 15.16Z"
+                    fill="#1C274C" />
+                </svg>
+                <strong>Platform:</strong> Zoom
+              </li>
+              </li>
+            </ul>
+            <button class="register-button" type="button" onclick="next()">Register Now for ₹9</button>
+            <p class="mt-4">Achieve Your Financial Goals 10X Faster & Live Stress-Free</p>
+          </section>
+        </div>
+
+        <section id="learn">
+          <h2>Here’s What You’ll Learn in the Workshop</h2>
+          <ul>
+            <li>How to use small cap stocks to create generational wealth</li>
+            <li>Identifying Multibaggers in Minutes</li>
+            <li>Finding best Mutual funds/stocks early that can give best returns</li>
+            <li>All about FIRE & early retirement</li>
+          </ul>
+        </section>
+
+        <section id="bonuses">
+          <h2>Bonuses Worth ₹XX,XXX</h2>
+          <ul>
+            <li>Finance Dictionary Worth ₹x,xxx</li>
+            <li>Masterclass Cheatsheet Worth ₹x,xxx</li>
+            <li>E-books on Trading Journey Worth ₹x,xxx</li>
+          </ul>
+        </section>
+      </div>
+      <footer>
+        <p>&copy; 2025 VinAiak Finance. All rights reserved.</p>
+      </footer>
+    </div>
+    <section class="p-12">
+      <h1 class="text-4xl font-bold">Welcome to Desktop View</h1>
+      <!-- Rest of desktop-specific content -->
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+    <div id="LoginPage" class="hidden">
+      <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center text-blue-800 mb-6">Register for the Workshop</h1>
+
+        <form action="payment.html" method="GET" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" required
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input placeholder="your@gmail.com" type="email" id="email" name="email" required
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+            <div class="mt-1 flex">
+              <span
+                class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-100 text-gray-700 text-sm">
+                +91
+              </span>
+              <input type="tel" id="phone" name="phone" required
+                class="block w-full rounded-r-md border border-gray-300 shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Enter your phone number">
+            </div>
+          </div>
+
+
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+            Proceed to Payment
+          </button>
+        </form>
+        <p class="mt-4">Confirmation and Updates will be sent to your email</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 1%;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+section h2 {
+    color: #0056b3;
+}
+
+#mentor {
+    width: 55%;
+    margin-left: 0;
+    margin-right: 1%;
+}
+
+#masterclass-info {
+    width: 35%;
+    margin-right: 0;
+    margin-left: 1%;
+}
+
+#mentor img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('checkmark.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.register-button {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.register-button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bagal {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.mobile-reg {
+    position: fixed;
+    bottom: 1vh;
+    left: 10vw;
+}
+
+.mobile-reg button {
+    width: 80vw;
+    text-align: center;
+}
+
+#mentor-mobile,
+#masterclass-info-mobile {
+    width: 90%;
+}
+
+#mentor-mobile .varmaji {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+    left: 30%;
+    transform: translate(0, -15%);
+    text-align: center;
+}
+
+#mentor-mobile img {
+    border-radius: 10%;
+}
+
+.azib-jagah {
+    width: 50%;
+    transform: translate(0, -175%);
+}
+
+.mobile section {
+    margin-bottom: 0;
+}
