@@ -7,6 +7,8 @@
   <title>Workshop Registration</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
       <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
         <h1 class="text-2xl font-bold text-center text-blue-800 mb-6">Register for the Workshop</h1>
 
-        <form action="payment.html" method="GET" class="space-y-4">
+        <form class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
             <input type="text" id="name" name="name" required
@@ -52,20 +54,21 @@
                 class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-100 text-gray-700 text-sm">
                 +91
               </span>
-              <input type="tel" id="phone" name="phone" required
+              <input type="number" id="phone" name="phone" required
                 class="block w-full rounded-r-md border border-gray-300 shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Enter your phone number">
             </div>
           </div>
 
 
-          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+          <button type="submit" onclick="pay(event)" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
             Proceed to Payment
           </button>
         </form>
         <p class="mt-6">Confirmation and Updates will be sent to your email</p>
-        <p class="text-xs text-center mt-3">By proceeding you agree to our <a class="underline" href="terms.html">Terms</a> , <a class="underline"
-            href="privacy.html">Privacy</a> & <a class="underline" href="refund.html">Refund
+        <p class="text-xs text-center mt-3">By proceeding you agree to our <a class="underline"
+            href="terms.html">Terms</a> , <a class="underline" href="privacy.html">Privacy</a> & <a class="underline"
+            href="refund.html">Refund
             Policy</a></p>
 
       </div>

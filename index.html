@@ -7,7 +7,6 @@
   <title>Personal Finance Workshop</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <script src="index.js"></script>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -93,7 +92,7 @@
             </li>
           </ul>
           <div class="mobile-reg">
-            <a href="login.html" class="register-button" type="button" onclick="next()">Register Now for ₹9</a>
+            <a href="login.html" class="register-button" type="button">Register Now for ₹9</a>
           </div>
           <p class="mt-4">Achieve Your Financial Goals 10X Faster & Live Stress-Free</p>
         </section>
@@ -117,12 +116,22 @@
           </ul>
         </section>
       </div>
-      <footer>
-        <p>&copy; 2025 VinAiak Finance. All rights reserved.</p>
+      <footer class="mt-8 text-center">
+        <nav>
+          <ul class="space-y-2 text-sm">
+            <li><a href="home.html" class="text-blue-500 hover:underline">Home</a></li>
+            <li><a href="about.html" class="text-blue-500 hover:underline">About Us</a></li>
+            <li><a href="contact.html" class="text-blue-500 hover:underline">Contact Us</a></li>
+            <li><a href="terms.html" class="text-blue-500 hover:underline">Terms of Use</a></li>
+            <li><a href="privacy.html" class="text-blue-500 hover:underline">Privacy Policy</a></li>
+            <li><a href="refund.html" class="text-blue-500 hover:underline">Refunds and Rescheduling Policy</a></li>
+          </ul>
+        </nav>
+        <p class="mt-4 text-xs">&copy; 2025 VinAiak Finance. All rights reserved.</p>
       </footer>
     </div>
     <section class="p-4">
-      <h1 class="text-2xl font-bold">Welcome to Mobile View</h1>
+      <h1 class="text-2xl font-bold">Welcome to Mobile</h1>
       <!-- Rest of mobile-specific content -->
     </section>
   </div>
@@ -138,7 +147,7 @@
       </header>
       <div class="sections">
         <div class="bagal">
-          <section id="mentor">
+          <section id="mentor" class="hover:scale-104 transition-transform duration-300">
 
             <h2 class="font-bold">Meet Your Mentor</h2>
             <div>
@@ -211,7 +220,7 @@
               </li>
               </li>
             </ul>
-            <a href="login.html" class="register-button" type="button">Register Now for ₹9</a>
+            <a href="login.html" class="hover:scale-107 transition-transform duration-300 register-button" type="button">Register Now for ₹9</a>
             <p class="mt-4">Achieve Your Financial Goals 10X Faster & Live Stress-Free</p>
           </section>
         </div>
@@ -235,14 +244,23 @@
           </ul>
         </section>
       </div>
+
+
       <footer>
-        <p>&copy; 2025 VinAiak Finance. All rights reserved.</p>
+
+        <nav class="mt-4">
+          <ul class="flex justify-center space-x-4 text-sm font-bold mb-4">
+            <li class="hover:scale-110 transition-transform duration-300"><a href="home.html" class="text-blue-500 hover:underline">Home</a></li>
+            <li class="hover:scale-110 transition-transform duration-300"><a href="about.html" class="text-blue-500 hover:underline">About Us</a></li>
+            <li class="hover:scale-110 transition-transform duration-300"><a href="contact.html" class="text-blue-500 hover:underline">Contact Us</a></li>
+            <li class="hover:scale-110 transition-transform duration-300"><a href="terms.html" class="text-blue-500 hover:underline">Terms of Use</a></li>
+            <li class="hover:scale-110 transition-transform duration-300"><a href="privacy.html" class="text-blue-500 hover:underline">Privacy Policy</a></li>
+            <li class="hover:scale-110 transition-transform duration-300"><a href="refund.html" class="text-blue-500 hover:underline">Refunds and Rescheduling Policy</a></li>
+          </ul>
+          <p class="text-sm">&copy; 2025 VinAiak Finance. All rights reserved.</p>
+        </nav>
       </footer>
     </div>
-    <section class="p-12">
-      <h1 class="text-4xl font-bold">Welcome to Desktop View</h1>
-      <!-- Rest of desktop-specific content -->
-    </section>
   </div>
 
 </body>
