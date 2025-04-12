@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VinAiak Finance</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white py-6 text-center">
+            <h1 class="text-2xl font-bold">Contact Us</h1>
+            <p class="mt-2">We’d love to hear from you! Reach out to us with any questions or feedback.</p>
+        </header>
+
+        <!-- Contact Form Section -->
+        <main class="flex-grow p-6">
+            <section class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-xl font-bold text-blue-600 mb-4">Get in Touch</h2>
+                <form action="#" method="POST" class="space-y-4">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Your Name">
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="yourname@example.com">
+                    </div>
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
+                </form>
+            </section>
+        </main> 
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <nav class="bg-gray-800 text-white text-center py-4">
+                <ul class="flex justify-center space-x-4 text-sm font-bold mb-4">
+                    <li class="hover:scale-110 transition-transform duration-300"><a href="index.html"
+                            class="text-blue-500 hover:underline">Home</a></li>
+                    <li class="hover:scale-110 transition-transform duration-300"><a href="contact.html"
+                            class="text-blue-500 hover:underline">Contact Us</a></li>
+                    <li class="hover:scale-110 transition-transform duration-300"><a href="terms.html"
+                            class="text-blue-500 hover:underline">Terms of Use</a></li>
+                    <li class="hover:scale-110 transition-transform duration-300"><a href="privacy.html"
+                            class="text-blue-500 hover:underline">Privacy Policy</a></li>
+                    <li class="hover:scale-110 transition-transform duration-300"><a href="refund.html"
+                            class="text-blue-500 hover:underline">Refunds and Rescheduling Policy</a></li>
+                </ul>
+                <p class="text-sm">&copy; 2025 VinAiak Finance. All rights reserved.</p>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
