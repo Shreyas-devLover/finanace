@@ -34,7 +34,7 @@ async function pay(e) {
                 } else {
                     alert("Payment Failed")
                 }
-            }
+            })
         },
         "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
             name, //your customer's name
