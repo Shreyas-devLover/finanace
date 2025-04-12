@@ -17,7 +17,7 @@ async function pay(e) {
         "key": "rzp_test_6M1c3gu3IsajYS", // Enter the Key ID generated from the Dashboard
         "amount": "900", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
-        "name": "Backchodpay", //your business name
+        "name": "Finance Session", //your business name
         "description": "Test Transaction",
         "image": "https://example.com/your_logo",
         "order_id": response.order_id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
