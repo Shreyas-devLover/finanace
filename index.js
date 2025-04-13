@@ -21,13 +21,18 @@ async function pay(e) {
         "description": "Test Transaction",
         "image": "https://example.com/your_logo",
         "order_id": response.order_id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        "handler": function (response) {
+        "handler": function (handler_response) {
+            console.log(response, handler_response);
             fetch("https://api.vinaiak.com/verify-order", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(response)
+                body: JSON.stringify({
+                    razorpay_order_id: response.razorpay_order_id,
+                    razorpay_payment_id: handler_response.razorpay_payment_id, 
+                    razorpay_signature: response.razorpay_signature,
+                })
             }).then(res => res.json()).then(data => {
                 if (data.success) {
                     alert("Payment Successful")
