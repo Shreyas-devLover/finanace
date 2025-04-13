@@ -14,7 +14,7 @@ async function pay(e) {
     const res = await fetch("https://api.vinaiak.com/create-order")
     const response = await res.json()
     var options = {
-        "key": "rzp_test_6M1c3gu3IsajYS", // Enter the Key ID generated from the Dashboard
+        "key": "rzp_live_AIoZYXjVrXKB5s", // Enter the Key ID generated from the Dashboard
         "amount": "900", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "Finance Session", //your business name
