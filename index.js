@@ -11,7 +11,7 @@ async function pay(e) {
         return;
     }
     e.preventDefault();
-    const res = await fetch("https://api.vinaiak.com/create-order")
+    const res = await fetch("https://n7vqxtknqydvevm4q27ifps6tm0werxl.lambda-url.ap-south-1.on.aws")
     const response = await res.json()
     var options = {
         "key": "rzp_live_AIoZYXjVrXKB5s", // Enter the Key ID generated from the Dashboard
@@ -23,7 +23,7 @@ async function pay(e) {
         "order_id": response.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler": function (handler_response) {
             console.log(response, handler_response);
-            fetch("https://api.vinaiak.com/verify-order", {
+            fetch("https://n7vqxtknqydvevm4q27ifps6tm0werxl.lambda-url.ap-south-1.on.aws", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
